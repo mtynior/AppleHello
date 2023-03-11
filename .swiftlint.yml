@@ -1,0 +1,44 @@
+disabled_rules: # rule identifiers to exclude from running
+- force_cast
+- trailing_whitespace
+
+# Find all the available rules by running:
+# swiftlint rules
+
+included: # paths to include during linting. `--path` is ignored if present.
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Pods
+
+#type name
+type_name:
+    min_length: 2
+    max_length:
+        warning: 50
+        error: 100
+    allowed_symbols: "_"
+    
+#identifier name
+identifier_name:
+    min_length: 2
+    max_length:
+        warning: 50
+        error: 100
+    allowed_symbols: "_"
+
+#large tuple starts when number of parameters > 4
+large_tuple: 4
+
+# parameterized rules can be customized from this configuration file
+line_length: 256
+
+function_parameter_count:
+- 30
+- 40
+
+# parameterized rules are first parameterized as a warning level, then error level.
+type_body_length:
+- 500 # warning
+- 1000 # error
+
+#reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)
