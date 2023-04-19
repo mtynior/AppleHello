@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">Apple's Hello animation recreated in SwiftUI</p>
+<p align="center">This repository is part of the <a href="https://thisdevbrain.com/apple-hello-animation/">blog post at This Dev Brain</a>.<p/>
 
 <p align="center">
  <img width="893" alt="Apple_Hello" src="https://user-images.githubusercontent.com/6362174/224505465-5425ce35-cd39-40f4-bbf8-2524175d406f.png">
